@@ -17,7 +17,9 @@ public class ExceptionEx1 {
                 total += vals[index];
                 
             } catch(ArrayIndexOutOfBoundsException err) {
-                System.out.println(err);
+                System.out.println("Error: "+ err.getMessage() + ", accessing an index that does not exist.");
+            } catch(Exception err) {
+                System.out.println(err.getMessage());
             }
         }
          System.out.println(total);

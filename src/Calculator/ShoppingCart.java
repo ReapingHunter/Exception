@@ -9,10 +9,11 @@ public class ShoppingCart {
         double divResult = 0;
         try {
             divResult = calc.divide(15, 0);
+            System.out.println("Division Result: " + divResult);
         } catch (ArithmeticException err) {
-            System.out.println("Error: Division by 0 is not allowed!!!\n" + err);
+            System.out.println(err.getMessage());
         }
-        System.out.println("Division Result: " + divResult);
+        
 
     }
 }
